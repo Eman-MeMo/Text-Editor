@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/608e9d3ec2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor</title>
+</head>
+<body>
+    <form action="database.php" method="post">
+        <div class="box">
+            <div class="container">
+                <div class="small_container">
+                    <div class="btns">
+                        <button type="submit" name="save"  class="btn">Save as file</button>
+                        <button type="submit" name="open"  class="btn">Open a file</button>
+                        <input type="text" name="document_Name" class="document_Name" id="document_Name" placeholder="Enter File name">
+                    </div>
+                    <div class="fontsize box2">
+                        <input type="number" name="font-size" id="font-size" min="1" max="100" value="16" onchange="fontFun(this)">
+
+                    </div>
+                    <div class="buttons box2">
+                        <input type="hidden" name="isBold" id="isBold" value="0">
+                        <button type="button"  class="button bold" onclick="BoldFun(this)" >
+                            <i class="fa-solid fa-bold"></i>
+                        </button>
+                        <input type="hidden" name="isItalic" id="isItalic" value="0">
+                        <button type="button" class="button italic" onclick="italicFun(this)">
+                            <i class="fa-solid fa-italic"></i>
+                        </button>
+                        <input type="hidden" name="isUnderLine" id="isUnderLine" value="0">
+                        <button type="button" class="button underline" onclick="underlineFun(this)">
+                            <i class="fa-solid fa-underline"></i>
+                        </button>
+                    </div>
+                    <div class="aligntext box2" >
+                        <input type="hidden" name="aligntext" id="align" value="left">
+                        <button type="button" class="button" onclick="alignTextLeftFun(this)">
+                            <i class="fa-solid fa-align-left"></i>
+                        </button>
+                        <button type="button" class="button" onclick="alignTextCenterFun(this)">
+                            <i class="fa-solid fa-align-center"></i>
+                        </button>
+                        <button type="button" class="button" onclick="alignTextRightFun(this)">
+                            <i class="fa-solid fa-align-right"></i>
+                        </button>
+                    </div>
+                    <div class="otherButtons box2">
+                        <input type="hidden" name="isUpper" id="isUpper" value="0">
+                        <button type="button" class="button upper" onclick="upper_lower_Fun(this)">
+                            aA
+                        </button>
+                        <button type="button" class="button" onclick="deleteFun(this)">
+                            <i class="fa-solid fa-text-slash"></i>
+                        </button>
+                        <input type="color" name="Coloring" id="Coloring"  class="button" onchange="colorFun(this)">
+                    </div>
+                </div>
+                <br>
+                <div class="small_container">
+                    <textarea name="textarea" id="textarea" placeholder="Write Your Text Here ..."></textarea>    
+                </div>
+            </div>
+        </div>
+        
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

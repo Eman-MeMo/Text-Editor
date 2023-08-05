@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #95f5b0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 500px;
+  width: 1100px;
+}
+.small_container {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.404) 0px 15px;
+  padding: 5px;
+}
+.box2 {
+  display: inline-block !important;
+  padding: 0 5px;
+}
+.btns {
+  padding: 10px 10px;
+  display: inline-block;
+  margin-left: 20px;
+  outline: none;
+  border-right: 2px solid #80da99;
+}
+.btn {
+  margin-left: 5px;
+  color: #fff;
+  border: 1px solid #087441;
+  background-color: #26a86b;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 500;
+  cursor: pointer;
+  width: 100px;
+  height: 28px;
+  outline: none;
+}
+.btn:hover {
+  color: #26a86b;
+  border: 1px solid #087441;
+  background-color: #fff;
+}
+.fontsize {
+  border-right: 2px solid #80da99;
+}
+input[type="number"] {
+  outline: none;
+  border: none;
+  width: 50px;
+  color: #095e21;
+  font-size: 23px;
+  padding: 10px 0px;
+  margin-left: 10px;
+}
+.buttons {
+  border-right: 2px solid #80da99;
+}
+.button {
+  border: none;
+  color: #095e21;
+  font-size: 20px;
+  font-weight: 300;
+  background: transparent;
+  padding: 10px 21px;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+.button:hover {
+  background-color: #d5e8db;
+}
+.button.active {
+  background-color: #d5e8db;
+  color: #d37d21;
+}
+.aligntext {
+  border-right: 2px solid #80da99;
+}
+input[type="color"] {
+  height: 40px;
+  width: 80px;
+  margin-right: 15px;
+  background-color: none;
+  outline: none;
+  border: none;
+}
+textarea {
+  width: 100%;
+  height: 450px;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  resize: vertical;
+}
+.document_Name {
+  width: 120px;
+  height: 30px;
+  margin-left: 5px;
+  color: #fff;
+  border: 1px solid #828d88;
+  background-color: #89c2a7;
+  font-weight: bold;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: 500;
+  cursor: pointer;
+  width: 100px;
+  height: 28px;
+  outline: none;
+}
+.document_Name::placeholder {
+  color: #fff;
+  text-align: center;
+}
